@@ -1,5 +1,5 @@
 function inserirBotaoComDropdown() {
-    const targetDiv = document.querySelector('div[data-v-37554ae1].flex.h-10.ml-auto');
+    const targetDiv = document.querySelector('div[data-v-67277b2d].flex.h-10.ml-auto');
 
     // Verifica se o componente já foi inserido para evitar duplicação
     if (targetDiv && !targetDiv.querySelector('.meu-container')) {
