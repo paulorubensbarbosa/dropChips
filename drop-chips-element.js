@@ -79,7 +79,10 @@ function inserirBotaoComDropdown() {
                 const tiptapEditor = document.querySelector('textarea#text-message.w-full.text-gray-700.border-none.outline-none.text-area');
                 if (tiptapEditor) {
                     // Apaga o chip anterior e insere o novo chip
-                    tiptapEditor.value = optionValue + ' ' + tiptapEditor.value.replace(/@chip\d+/g, '').trim();
+                    //tiptapEditor.value = optionValue + ' ' + tiptapEditor.value.replace(/@chip\d+/g, '').trim();
+                    const textoAtual = tiptapEditor.value;
+                    const novoTexto = textoAtual.replace(/@chip\d+/g, '').trim(); // Remove o chip anterior
+                    tiptapEditor.value = optionValue + (novoTexto ? ' ' + novoTexto : ''); // Adiciona o novo chip
                 }
                 dropdown.style.display = 'none'; // Oculta o dropdown após a seleção
             });
