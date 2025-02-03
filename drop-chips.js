@@ -1,5 +1,5 @@
 function inserirBotaoComDropdown() {
-    const targetDiv = document.querySelector('div[data-v-37554ae1].flex.h-10.ml-auto');
+    const targetDiv = document.querySelector('div[data-v-67277b2d].flex.h-10.ml-auto');
 
     // Verifica se o componente já foi inserido para evitar duplicação
     if (targetDiv && !targetDiv.querySelector('.meu-container')) {
@@ -30,7 +30,7 @@ function inserirBotaoComDropdown() {
         // Adiciona a imagem ao botão
         const img = document.createElement('img');
         //img.src = 'https://img.icons8.com/?size=100&id=30436&format=png&color=000000'; // URL da imagem
-        img.src = './chipAzul.png';
+        img.src = 'https://paulorubensbarbosa.github.io/dropChips/chipAzul.png';
         img.alt = 'Chip';
         img.style.width = '20px';
         img.style.height = '20px';
