@@ -61,7 +61,7 @@ function inserirBotaoComDropdown() {
         dropdown.style.padding = '10px';
 
         // Adiciona as opções no dropdown
-        ['@chip1', '@chip2', '@chip3', '@chip4', '@chip5'].forEach(optionValue => {
+        ['@chip1', '@chip2', '@chip3', '@chip4', '@chip5', '@chip6', '@chip7', '@chip8', '@chip9', '@chip10'].forEach(optionValue => {
             const option = document.createElement('div');
             option.textContent = optionValue;
             option.style.padding = '5px 10px';
@@ -69,7 +69,7 @@ function inserirBotaoComDropdown() {
             option.style.borderBottom = '1px solid #eee';
 
             // Última opção sem borda
-            if (optionValue === '@chip5') {
+            if (optionValue === '@chip10') {
                 option.style.borderBottom = 'none';
             }
 
